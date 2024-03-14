@@ -255,7 +255,7 @@ public class PaintActivity extends AppCompatActivity {
                         Log.d("returnMSG", jsonObject.getString("msg"));
                         // 根据需要处理响应
                         runOnUiThread(() -> {
-                            if (!result.equals("ok")) {
+                            if (result.equals("ok")) {
                                 // todo 跳转到视频播放界面 字符串 += 1
                                 String globalString = ((MyApp) getApplication()).getGlobalString();
                                 globalString += "1";
